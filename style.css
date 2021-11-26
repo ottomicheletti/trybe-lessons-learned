@@ -1,17 +1,220 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: block;
 }
 
-/* Problema 1 */
+/* Problema 1 ✅ */
 body {
   background-color: rgb(253, 251, 251);
+  width: 80%;
+  margin: auto;
 }
 
 #cabecalho {
-  border: 2px red solid;
-  width: 100%;
-  height: 3em;
+  background-color: #14213d;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 0px 0px 25px 25px;
+  width: 80%;
+  height: 6em;
+  margin: 0 auto;
   position: fixed;
   top: 0;
+}
+#cabecalho h1 {
+  color: #ffffff;
+  margin: 0.1em;
+  text-align: center;
+}
+
+#titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+}
+
+nav {
+  /* border: 2px red solid; */
+  text-align: center;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fca311;
+  border-radius: 20px;
+  padding: 0.3em;
+  margin: 0.2em;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+
+nav > a:hover {
+  box-shadow: 0px 0px 10px white;
+}
+
+#seccao1 {
+  margin-top: 7em;
+  /* border: 2px yellow solid; */
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin-top: -7em;
+  margin-bottom: 5em;
+  padding-top: 8em;
+  background-color: #14213d;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 25px;
+  color: #ffffff;
+  /* border: 2px red solid; */
+}
+
+#perfil {
+  width: 100%;
+  margin: auto;
+  padding-top: 1em;
+  text-align: center;
+}
+
+#perfil h1 {
+  font-family: "Mrs Sheppards", cursive;
+  font-weight: 100;
+  font-size: 3em;
+}
+
+#sobreMim {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+#sobreMim > p {
+  text-align: left;
+  font-size: 0.9em;
+  background-color: #fca311;
+  border: 1em #fca311 solid;
+  border-left: 0.6em;
+  border-radius: 0px 20px 20px 0;
+  padding-left: 0.2em;
+  margin-left: -2.1em;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#minha_foto {
+  width: 10em;
+  /* margin: 0.5em; */
+  border-radius: 100%;
+  background-color: #fca311;
+  padding: 1em;
+  border: 1em #fca311 solid;
+  box-shadow: 0px 0px 20px black;
+}
+
+#seccao2 {
+  text-align: center;
+  /* border: 2px red solid; */
+}
+
+#listaLicoes {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-around;
+  /* border: 2px red solid; */
+}
+
+#licoes_aprendidas {
+  list-style-type: decimal;
+  /* border: 2px yellow solid; */
+  order: 1;
+  width: 30%;
+  height: 80%;
+  line-height: 1.1em;
+}
+#licoes_a_aprender {
+  list-style-type: circle;
+  /* border: 2px yellow solid; */
+  order: 2;
+  width: 30%;
+  height: 80%;
+  line-height: 1.1em;
+}
+
+article {
+  /* border: 2px red solid; */
+  display: flex;
+  /* height: 50%; */
+  padding: 0.5em;
+}
+
+.lado-esquerdo {
+  /* border: 2px yellow solid; */
+  float: left;
+  padding: 0.5em;
+}
+
+.lado-direito {
+  /* border: 2px cyan solid; */
+  float: right;
+  padding: 0.5em;
+}
+
+.lado-direito a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.lado-direito a:hover {
+  color: #fca311;
+}
+
+h2 {
+  text-align: center;
+  margin: 2em auto 0.5em;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
+
+p,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+#seccao4 {
+  /* border: 2px cyan solid; */
+  margin: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+table {
+  margin: 1em auto;
+  border: 0.5em #fca311 solid;
+  border-radius: 15px;
+}
+
+td {
+  padding: 0.3em;
+}
+
+#rodape {
+  background-color: #14213d;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 25px 25px 0px 0px;
+  width: 80%;
+  height: 2em;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+#rodape > h3 {
+  margin: 0.4em auto;
 }
